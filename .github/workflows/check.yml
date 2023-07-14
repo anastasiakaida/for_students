@@ -21,4 +21,4 @@ jobs:
       run: pip install pycodestyle
     # check .py files
     - name: pycodestyle check
-      run: pycodestyle --verbose --format '%(code)s: %(text)s'
+      run: pycodestyle *.py
