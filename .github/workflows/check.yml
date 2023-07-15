@@ -21,4 +21,4 @@ jobs:
       run: pip install pycodestyle
     # check .py files
     - name: pycodestyle check
-      run: pycodestyle --statistics -qq ./
+      run: pycodestyle --select E,W ./ --format '%(code)s: %(text)s'
